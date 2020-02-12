@@ -13,9 +13,9 @@ API de serviços de localização de ponto de interesse (POIs).
 
 - Serviço para listar todos os POIs cadastrado: através de um client HTTP, fazer a requisição utilizando o método Get com a url localhost:8080/pois/allPois.
 
-- Serviço para listar POIs por proximidade: através de um client HTTP, fazer a requisição utilizando o método Get com a url localhost:8080/pois/underTen.
+- Serviço para listar POIs por proximidade: através de um client HTTP, inserir a url localhost:8080/pois/underTen, através do método Get, os parâmetros: cooX2, cooY2, com seus respectivos valores.
 
-- Os testes não foram realizados devido a um problema em meu ambiente de testes, mas estão todos no arquivo PoisControllerIntegrationTest.
+- Os testes não foram realizados devido a um problema em meu ambiente de desenvolvimento, mas estão todos no arquivo PoisControllerIntegrationTest.
 *error: No tests found for given includes: [com.xyinc.gps.PoisControllerIntegrationTest](filter.includeTestsMatching)
 
 Muito obrigado pela oportunidade!
