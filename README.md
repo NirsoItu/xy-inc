@@ -7,7 +7,7 @@ API de serviços de localização de ponto de interesse (POIs).
 
 - Antes de iniciar a aplicação, crie um banco de dados MySQL com o nome: db_poi;
 
-- Caso ocorra problema de conexão, verifique o arquivo no "application.properies" se as propriedades correspondem as configurações de seu banco de dados como localhost, username e password;
+- Caso ocorra problema de conexão, verifique o arquivo no "application.properties" as configurações de seu banco de dados como localhost, username e password;
 
 - Serviço para cadastrar pontos de interesse, com 3 atributos: através de um client HTTP, inserir a url localhost:8080/pois/addPoi, através do método Post, os parâmetros: name, cooX1, cooY1, com seus respectivos valores.
 
