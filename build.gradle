@@ -2,6 +2,8 @@ plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'checkstyle'
+	id 'pmd'
 }
 
 group = 'com.xyinc'
@@ -19,8 +21,26 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+    implementation 'junit:junit:4.12'
 }
 
 test {
 	useJUnitPlatform()
 }
+
+repositories { jcenter() }
+
+checkstyle {
+	toolVersion = '8.29'
+	showViolations = true
+	configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+pmd {
+	ruleSetFiles = files ("config/pmd/ruleset.xml")
+	toolVersion = '6.21.0'
+	ignoreFailures = true
+	consoleOutput = true
+}
+
+
