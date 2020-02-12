@@ -7,13 +7,13 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name = " pois ")
+@Table(name = "pois")
 @EntityListeners (AuditingEntityListener.class)
 public class Pois {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private long id;
+    private Integer id;
 
     @NotBlank
     private String name;
@@ -33,7 +33,7 @@ public class Pois {
         this.name = name;
     }
 
-    @Column(name = "coordenadaX", nullable = false)
+    @Column(name = "coordenadaX1", nullable = false)
     public Integer getCooX1() {
         return cooX1;
     }
@@ -42,7 +42,7 @@ public class Pois {
         this.cooX1 = cooX1;
     }
 
-    @Column(name = "coordenadaY", nullable = false)
+    @Column(name = "coordenadaY1", nullable = false)
     public Integer getCooY1() {
         return cooY1;
     }
