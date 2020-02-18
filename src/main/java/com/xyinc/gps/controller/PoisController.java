@@ -28,7 +28,9 @@ public class PoisController {
         n.setCooX1(cooX1);
         n.setCooY1(cooY1);
         poisRepository.save(n);
+
         return "Poi created with success!";
+
         //return new ResponseEntity<Pois>(pois, HttpStatus.CREATED); ** Test
     }
 
