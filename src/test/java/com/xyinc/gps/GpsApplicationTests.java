@@ -7,10 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class GpsApplicationTests {
+public class GpsApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+	public void contextLoads() {
 
+	}
 }
